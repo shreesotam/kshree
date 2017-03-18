@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    /*set the width of input-quantity in Rate page*/
+
+	.input{width:25%;}
+
+	/* set the width of input-total in rate page*/
+	.total{width:40%;}
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+<script>  
+var total = function(total){
+var rate = document.getElementsByClassName("rate").value;
+var quantity = document.getElementsByClassName("input").value;
+var total = document.getElementsByClassName("total");
+total= rate*quantity;};
+
+</script>
+<title>
+Keshari Stores
+</title>
+</head>
+<body>
+<a href="index.html"> <img class="navbar-fixed-top" src="logo.png" style="float:left; width:15%; position:absolute;">
+</a>
+<nav class="navbar navbar-inverse " style="margin-left:14.47%; height:20%;">
+<div class="container-fluid" style="margin-left:65%";>
+ <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li ><a href="index.html">Home</a></li>
+<li class="active"><a href="rate.html">Rate</a></li>
+<li><a href="cement.html">Cement</a></li>
+<li><a href="iron.html">Iron</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+
+
+</div>
+</nav>
+</div>
+<div class="container-fluid text-center">    
+  <div class="row content";>
+    <div class="col-sm-2 sidenav" style="width:15%;">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="col-sm-8 text-left" > 
+      <h1>Welcome</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      <h3>Rate</h3>
+      <table style="width:80%;">
+	<theader>
+	<th>  S.no.  
+	</th>
+	<th>  Item  </th>
+	<th>  Rate  </th>
+	<th>  Quantity </th>
+	<th>  Total  </th>
+	</theader>
+	<tr><td>1</td><td> Cement </td><td type="number"  class="rate">  Rs.830  </td> <td> <input type="number" onInput="total()" class="input"/> </td> <td> <input type="number" class="total" onInput="total()" /> </td>
+	</tr>
+	
+	<tr><td>2</td><td> Manoj Gas </td><td type="number"  class="rate" >  1330  </td> <td> <input type="number"  class="input" oninput="total()" /> </td> <td> <input type="number" class="total" oninput="total()" /> </td>
+	</tr>
+	<tr><td>3</td><td>  8mm  </td><td type="number"  class="rate" >  85  </td> <td> <input type="number" class="input" oninput="total()" /> </td> <td> <input type="number" class="total" oninput="total()" /> </td>
+	</tr>
+	<tr><td>4</td><td>  10mm  </td><td type="number"  class="rate" >  81  </td> <td> <input type="number" class="input"  oninput="total()" /> </td> <td> <input type="number"  class="total" oninput="total()" /> </td>
+	</tr>
+	<tr><td>5</td><td>  12mm  </td><td type="number"  class="rate">  81  </td> <td> <input type="number"  class="input" oninput="total()" /> </td> <td> <input type="number"  class="total" oninput="total()" /> </td>
+	</tr>
+	
+	</table>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+
+</body>
+</html>
