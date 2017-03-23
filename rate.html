@@ -9,18 +9,18 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <style>
-	  
-	  
+
+
      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
-    
+
     /* Set gray background color and 100% height */
     .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
       height: 100%;
     }
-    
+
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
@@ -40,17 +40,10 @@
         height: auto;
         padding: 25px;
       }
-      .row.content {height:auto;} 
+      .row.content {height:auto;}
     }
   </style>
-<script>  
-var total = function(total){
-var rate = document.getElementsByClassName("rate").value;
-var quantity = document.getElementsByClassName("input").value;
-var total = document.getElementsByClassName("total");
-total= rate*quantity;};
 
-</script>
 <title>
 Keshari Stores
 </title>
@@ -64,9 +57,9 @@ Keshari Stores
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
-     
+
     </div>
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav">
@@ -81,45 +74,45 @@ Keshari Stores
 </div>
 </nav>
 </div>
-	
-  
-<div class="container-fluid text-center">    
+
+
+<div class="container-fluid text-center">
   <div class="row content";>
-    <div class="col-sm-2 sidenav" style="margin-top:4%;">
+    <div class="col-sm-2 sidenav" style="margin-top:2%;">
       <p><a href="http://www.shivamcement.com.np/">Shivam Cement</a></p>
       <p><a href="http://www.jyotigroup.org.np/industry/himal-iron-steel/">Himal Iron</a></p>
       <p><a href="https://www.facebook.com/shreesotam">Shreesottam Keshari</a></p>
     </div>
-    <div class="col-sm-8 text-left" > 
+    <div class="col-sm-8 text-left" >
 	    <p><h3>Under maintenance</h3></p>
       <h1>Welcome</h1>
-      <p>This firm is Serving it's customer for more than 15 years. This business firm helps you in building your dream house by providing all the equipment required for building your dream house at affordable price and of good quality. For more details regarding our products, Please visit our Shop. </p>
+      <p>This firm is Serving it's customer for more than 15 years. This business firm helps you in building your dream house by providing all the equipment required for building your dream house at affordable price and of good quality. For more details regarding our products, Please visit our Shop.</p>
       <hr>
       <h3>Rate</h3>
-      <table style="width:80%;">
+      <table id="calc" style="width:80%;">
 	<theader>
-	<th>  S.no.  
+	<th>  S.no.
 	</th>
 	<th>  Item  </th>
 	<th>  Rate  </th>
 	<th>  Quantity </th>
 	<th>  Total  </th>
 	</theader>
-	<tr><td>1</td><td> Cement </td><td type="number"  class="rate">  Rs.830  </td> <td> <input type="number" onInput="total()" class="input"/> </td> <td> <input type="number" class="total" onInput="total()" /> </td>
+	<tr><td>1</td><td> Cement </td><td type="number"  class="rate">  830  </td> <td> <input type="number"  class="quant"/> </td> <td> <input type="number" class="total"  /> </td>
 	</tr>
-	
-	<tr><td>2</td><td> Manoj Gas </td><td type="number"  class="rate" >  1360  </td> <td> <input type="number"  class="input" oninput="total()" /> </td> <td> <input type="number" class="total" oninput="total()" /> </td>
+
+	<tr><td>2</td><td> Manoj Gas </td><td type="number"  class="rate" >  1360  </td> <td> <input type="number"  class="quant" /> </td> <td> <input type="number" class="total"  /> </td>
 	</tr>
-	<tr><td>3</td><td>  8mm  </td><td type="number"  class="rate" >  83  </td> <td> <input type="number" class="input" oninput="total()" /> </td> <td> <input type="number" class="total" oninput="total()" /> </td>
+	<tr><td>3</td><td>  8mm  </td><td type="number"  class="rate" >  85  </td> <td> <input type="number" class="quant"  /> </td> <td> <input type="number" class="total"  /> </td>
 	</tr>
-	<tr><td>4</td><td>  10mm  </td><td type="number"  class="rate" >  81  </td> <td> <input type="number" class="input"  oninput="total()" /> </td> <td> <input type="number"  class="total" oninput="total()" /> </td>
+	<tr><td>4</td><td>  10mm  </td><td type="number"  class="rate" >  81  </td> <td> <input type="number" class="quant"   /> </td> <td> <input type="number"  class="total"  /> </td>
 	</tr>
-	<tr><td>5</td><td>  12mm  </td><td type="number"  class="rate">  81  </td> <td> <input type="number"  class="input" oninput="total()" /> </td> <td> <input type="number"  class="total" oninput="total()" /> </td>
+	<tr><td>5</td><td>  12mm  </td><td type="number"  class="rate">  81  </td> <td> <input type="number"  class="quant"  /> </td> <td> <input type="number"  class="total" /> </td>
 	</tr>
-	
+
 	</table>
     </div>
-    <div class="col-sm-2 sidenav" style="margin-top:4%;">
+    <div class="col-sm-2 sidenav" style="margin-top:2%;">
       <div class="well">
         <p>ADS</p>
       </div>
@@ -135,6 +128,24 @@ Keshari Stores
   <p><h2>Technical partner:Shreesottam Keshari</h2></p>
 </footer>
 
+<script>
+$("#calc tr").each(function(index,element){
+  var td = $(this).find('.rate')[0];
+  if(td){
+    var rate = Number(td.innerText);
 
+  }
+
+  var total = $(this).find('.total')[0];
+
+  var quant = $(this).find('.quant')[0];
+  if(quant){
+    $(quant).change(function(){
+        $(total).val(Number($(quant).val() * rate))
+    })
+  }
+})
+
+</script>
 </body>
 </html>
